@@ -51,19 +51,21 @@
             // 
             this.btnPrev.Location = new System.Drawing.Point(13, 163);
             this.btnPrev.Name = "btnPrev";
-            this.btnPrev.Size = new System.Drawing.Size(105, 41);
+            this.btnPrev.Size = new System.Drawing.Size(82, 41);
             this.btnPrev.TabIndex = 1;
             this.btnPrev.Text = "이전";
             this.btnPrev.UseVisualStyleBackColor = true;
+            this.btnPrev.Click += new System.EventHandler(this.btnPrev_Click);
             // 
             // btnNext
             // 
-            this.btnNext.Location = new System.Drawing.Point(171, 163);
+            this.btnNext.Location = new System.Drawing.Point(192, 163);
             this.btnNext.Name = "btnNext";
-            this.btnNext.Size = new System.Drawing.Size(98, 41);
+            this.btnNext.Size = new System.Drawing.Size(77, 41);
             this.btnNext.TabIndex = 2;
             this.btnNext.Text = "다음";
             this.btnNext.UseVisualStyleBackColor = true;
+            this.btnNext.Click += new System.EventHandler(this.btnNext_Click);
             // 
             // imgList
             // 
@@ -116,9 +118,9 @@
             // lblNum
             // 
             this.lblNum.Font = new System.Drawing.Font("굴림", 14F);
-            this.lblNum.Location = new System.Drawing.Point(124, 169);
+            this.lblNum.Location = new System.Drawing.Point(101, 169);
             this.lblNum.Name = "lblNum";
-            this.lblNum.Size = new System.Drawing.Size(41, 23);
+            this.lblNum.Size = new System.Drawing.Size(85, 23);
             this.lblNum.TabIndex = 3;
             this.lblNum.Text = "/";
             this.lblNum.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -136,6 +138,7 @@
             this.MaximizeBox = false;
             this.Name = "Form1";
             this.Text = "사진첩";
+            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.picImg)).EndInit();
             this.ResumeLayout(false);
 
